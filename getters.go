@@ -6,14 +6,6 @@ import (
 	"net/http"
 )
 
-// NewClient returns a getvideoClient capable of requests
-func NewClient(key string) Client {
-	var getvideoclient Client
-	getvideoclient.apikey = key
-
-	return getvideoclient
-}
-
 // NewRequest performs a get request
 func (client Client) NewRequest(url string) (Video, error) {
 	var video Video

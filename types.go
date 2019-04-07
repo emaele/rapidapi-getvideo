@@ -1,10 +1,11 @@
 package getvideo
 
-// Client
+// Client contains the apikey
 type Client struct {
 	apikey string
 }
 
+// Video is the result of a newRequest and contains all the info about the video requested
 type Video struct {
 	Status       bool     `json:"status"`
 	Message      string   `json:"message"`
