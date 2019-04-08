@@ -20,6 +20,6 @@ func main() {
 		// Error handling
 	}
 
-	fmt.Printf("Title: ", video.Title)
+	fmt.Printf("Title: %s", video.Title)
 }
 ```
